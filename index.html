@@ -10,24 +10,43 @@
   <body>
     <header>
       <h1>Guess My Number!</h1>
-      <p class="between"><span id="bull1" ><img   id="cow1"   class="cow"src="./assets/bull.svg" alt="bull-pict"></span> <span id="cow1" ><img id="cow2"   class="cow" src="./assets/cow.svg" alt=""></span></p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
+      <div id="logo">
+        <img src="./assets/cow.svg" alt="cow">
+        <img src="./assets/bull.svg" alt="bull">
+      </div>
+
+      <button id="again">Again!</button>
+      <p id="number">????</p>
     </header>
+    
     <main>
       <section class="left">
-        <input type="number" class="guess" />
+        <input
+          type="text"
+          id="uname"
+          name="name"
+          size="20"
+          placeholder="Username"
+        />
 
-        <input type="text" id="uname" name="name" size="20" placeholder="Username"/>
-      
+        <input type="text" id="guess" autofocus/>
     
-        <button class="btn check">Check!</button>
+        <button id="check" disabled>Check!</button>
+
+        <ol id="previous" reversed="reversed"></ol>
       </section>
+
       <section class="right">
-        <p class="message"> Start guessing...</p> <br> <p id="bull"> bull: <span id="num"> 0</span> cow: <span id="num1">0</span></p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
+        <p id="message">Start guessing...</p>
+        <p id="bulls-and-cows">
+          bull: <span id="bulls"> 0</span>
+          cow: <span id="cows">0</span>
+        </p>
+        <p class="label">
+          💯 Score: <span id="score">20</span>
+        </p>
+        <p class="label">
+          🥇 Highscore: <span id="highscore">0</span>
         </p>
       </section>
     </main>
