@@ -1,5 +1,7 @@
 # Bulls and Cows
 
+[Demo](https://FollowUpRepos.github.io/zaid-cows-and-bulls)
+
 In this project we will build a two player game that is called **Bulls and Cows**.
 
 ![cow icon](assets/cow.svg) ![bull icon](assets/bull.svg)
